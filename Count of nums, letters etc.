@@ -1,0 +1,34 @@
+public class lolz
+{
+	public static void main(String[] args) {   
+     
+		String test = "This string is a test 123 123 123...::$#%#";
+		count (test);
+	}
+	public static void count(String x) {
+		char[] ch = x.toCharArray();
+		int letters = 0;
+		int numbers = 0;
+		int spaces = 0;
+		int others = 0;
+		for (int i = 0; i < x.length(); i++) {
+			if(Character.isLetter(ch[i])) {
+				letters ++ ;
+			}
+			else if (Character.isDigit(ch[i])) {
+				numbers ++;
+			}
+			else if (Character.isSpace(ch[i])) {
+				spaces ++ ;
+			}
+			else {
+				others ++;
+			}
+		}
+		System.out.println("The string is: This string is a test 123 123 123...::$#%#\"");
+		System.out.println("Letters: " + letters);
+		System.out.println("Numbers: " + numbers);
+		System.out.println("Spaces: " + spaces);
+		System.out.println("Others: " + others);
+	}
+}
