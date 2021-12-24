@@ -1,0 +1,32 @@
+
+public class Main{
+	public static void main (String[] args) throws InterruptedException {
+
+		MyThread myThread = new MyThread();
+		
+		myThread.start();
+	}
+}
+
+	class MyThread extends Thread {
+		public void run() {
+			int seconds = 0;
+			int viewsCount = 0;
+			while (seconds < 60) {
+				seconds++;
+				System.out.println(seconds + " seconds");
+				try {
+					Thread.sleep(100);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				if (seconds == 60) {
+					seconds = 0;
+					viewsCount++;
+				}
+				if (seconds == 0) System.out.println("Number of views: " + viewsCount);
+			}
+			
+		}
+	}
