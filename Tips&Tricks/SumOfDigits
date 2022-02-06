@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class SumOfDigits {
+    static void execute() {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Input a number to sum the digits");
+        int num = scan.nextInt();
+        int result = 0;
+            while (num > 0) {
+                result += num % 10;
+                num /= 10;
+            }
+        System.out.println(result);
+    }
+}
+
+
+// Idea is to create a loop of dividing number to 10 with remainder and divide to 10
+// after this just save this into the result
