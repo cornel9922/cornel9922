@@ -1,0 +1,14 @@
+public class WordCounter {
+    static void execute(String str) {
+        int count = 1;
+        if (!(str.substring(0,1).equals(" ") || str.substring(str.length()-1).equals(" "))) {
+            for (int i = 0; i < str.length(); i++) {
+                if (str.charAt(i) == ' ') count++;
+            }
+            System.out.println(count + " Words detected");
+        }
+        else {
+            System.out.println("ALARM! Space detected at beggining or ending!");
+        }
+    }
+}
