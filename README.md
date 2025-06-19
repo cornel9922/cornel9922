@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @cornel9922!
-- 👀 I’m interested in coding on Java.
-- 🌱 I’m currently learning Java and working on different small projects in JavaFX, Spring.
+- 👀 I’m interested in a Data Analyst job.
+- 🌱 I’m currently learning SQL, Google Sheets (aka excel), PowerBI and working on different projects of cleaning data and preparing analysis.
 - 💞️ I’m looking to collaborate on gmail.
 - 📫 How to reach me cornel.cornel200@gmail.com
 
